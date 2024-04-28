@@ -22,10 +22,10 @@ body{
 }
 
 .container{
-    border: .2rem solid var(--white);
     width: 40%;
     min-width: 45rem;
     position: absolute;
+    border-radius: .5rem;
 }
 
 .newtask{
