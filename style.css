@@ -69,6 +69,7 @@ body{
 }
 
 .task{
+    list-style-type: none;
     background-color: var(--white);
     padding: 3rem 2rem;
     border-radius: 1rem;
