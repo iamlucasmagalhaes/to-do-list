@@ -8,9 +8,16 @@ function addTask(){
     } else {
         const ul = document.getElementById('taskList') //captura a minha lista
         const li = document.createElement('li') //cria um item dinamicamente
-        li.innerText = input.value //inseri o texto que estava no input para o meu item da lista
+        const div = document.createElement('div') //cria uma div para organizar o radio button e o inpu.value
+        const radio = document.createElement('input') //cria um input para o meu radio button
+        radio.type = 'radio' //define o tipo do botão
         li.classList.add('task') //adiciona uma classe ao meu item
         li.classList.add('taskitens') //adiciona um segunda classe no meu item
+        div.classList.add('organization') //adicona uma classe a minha div organizadora
+        div.appendChild(radio) //adicona o meu radio button a minha div organizadora
+        div.appendChild(document.createTextNode(' '))
+        div.appendChild(document.createTextNode(input.value)) //coloca o texto que estava no input na minha div organizadora
+        li.appendChild(div) //adiciona a minha div organizadora ao meu li
         li.appendChild(createRemoveBtn()) //adiciona um botâo para remover o item
         ul.appendChild(li) //adicona o item a minha lista
     }
