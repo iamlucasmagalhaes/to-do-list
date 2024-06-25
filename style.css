@@ -102,3 +102,16 @@ body{
     cursor: pointer;
     outline: none;
 }
+
+@media screen and (max-width: 768px) {
+    .container{
+      width: 90%;
+      min-width: 0;
+    }
+
+    .task{
+        width: 99%;
+        min-width: 0;
+    }
+  
+  }
